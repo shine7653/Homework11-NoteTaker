@@ -43,3 +43,8 @@ Application should allow users to create and save notes.
 Application should allow users to view previously saved notes.
 
 Application should allow users to delete previously saved notes.
+
+## Screenshots
+
+1. Notes written and saved
+<img src="screenshots/20191205_110740.png" width="60%" height="60%">
