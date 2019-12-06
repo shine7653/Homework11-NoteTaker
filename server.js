@@ -1,6 +1,5 @@
 // 1. Dependencies
 var express = require("express");
-// var fs = require("fs");
 
 // 2. I'm creating an 'express' server called app
 var app = express();
@@ -13,10 +12,6 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 //what folder the browser can see
 app.use(express.static("public"));
-
-//To handle data parsing
-const fs = require("fs");
-const util = require("util");
 
 //5. Bring routes
 require("./routes/apiRoutes")(app);
