@@ -52,7 +52,7 @@ module.exports = function(app) {
             if (chosenId === noteContents[i].id) {
                 // delete noteContents[i];
                 noteContents.splice(i,1);
-
+                
                 let noteJSON = JSON.stringify(noteContents, null, 2);
 
                 writeFileAsync("./db/noteContents.json", noteJSON).then(function() {
@@ -67,3 +67,26 @@ module.exports = function(app) {
         
 };
 
+//---------------------------------------------------------
+// parseInt(string, radix);  
+// The parseInt function converts its first argument to a string, parses that string, then returns an integer or NaN.
+// console.log(Math.floor(Math.random() * 20));
+// console.log(parseInt("007")); --> 7
+// console.log(parseInt("t007")); --> NaN
+
+//---------------------------------------------------------
+// splice() : 
+/* <p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.splice(2, 0, "Lemon", "Kiwi");
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script> 
+===>   Banana,Orange,Lemon,Kiwi,Apple,Mango*/
+
+//---------------------------------------------------------
